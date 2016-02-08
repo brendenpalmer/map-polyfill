@@ -26,8 +26,9 @@ describe('Namespace: es6map', function() {
 
     describe('When getting the next value in the sequencer', function() {
       it('should return the correct value', function() {
+        _instance.identifier = 0;
         for (var i = 0; i < 99; i++) {
-          expect(_instance.next()).toEqual(i + 2);
+          expect(_instance.next()).toEqual(i);
         }
       });
     });
