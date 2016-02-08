@@ -1,0 +1,10 @@
+{
+  "name": "WeakMap Polyfill",
+  "ts": {
+    "config": "src/tsconfig.json"
+  },
+  "src": "src/**/*.ts",
+  "dist": "dist",
+  "docs": "docs",
+  "tmp": ".tmp"
+}
