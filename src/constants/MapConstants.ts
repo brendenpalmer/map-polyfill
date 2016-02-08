@@ -22,7 +22,7 @@ namespace es6map {
      * @returns {string} The unique identifier
      */
     public static get MAP_KEY_IDENTIFIER(): string {
-      return 'WEAKMAP_KEY_IDENTIFIER_OZAbzyeCu3_spF91dwX14';
+      return 'MAP_KEY_IDENTIFIER_OZAbzyeCu3_spF91dwX14';
     }
 
     /**
@@ -33,7 +33,7 @@ namespace es6map {
      * @returns {string} The unique identifier
      */
     public static get MAP_SET_THROWABLE_MESSAGE(): string {
-      return 'Invalid value used as weak map key';
+      return 'Invalid value used as map key';
     }
   }
 }

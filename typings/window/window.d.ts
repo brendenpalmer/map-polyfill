@@ -6,5 +6,5 @@
  */
 
 interface Window {
-  WeakMap: any;
+  Map: any;
 }

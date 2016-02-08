@@ -1,4 +1,4 @@
-/// <reference path="./weakmap/WeakMap.ts"/>
+/// <reference path="./map/Map.ts"/>
 /// <reference path="../typings/window/window.d.ts"/>
 
 /**
@@ -9,8 +9,8 @@
  * @namespace weakmap
  */
 
-namespace weakmap {
-  if (!window.WeakMap) {
-    window.WeakMap = WeakMap;
+namespace es6map {
+  if (!window.Map) {
+    window.Map = Map;
   }
 }

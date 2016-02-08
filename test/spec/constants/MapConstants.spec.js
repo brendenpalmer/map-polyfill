@@ -24,7 +24,7 @@ describe('Namespace: es6map', function() {
 
     it('should do nothing if trying to overwrite the identifier', function() {
       _MapConstants.MAP_KEY_IDENTIFIER = 'Another_identifier';
-      expect(_MapConstants.MAP_KEY_IDENTIFIER).toEqual('MAP_KEY_IDENTIFIER_spF91dwX14_OZAbzyeCu3');
+      expect(_MapConstants.MAP_KEY_IDENTIFIER).toEqual('MAP_KEY_IDENTIFIER_OZAbzyeCu3_spF91dwX14');
     });
 
     it('should return the throwable message', function() {
