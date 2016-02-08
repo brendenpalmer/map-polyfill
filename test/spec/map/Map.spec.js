@@ -1,24 +1,24 @@
 /**
- * Tests for WeakMap.ts
+ * Tests for Map.ts
  *
  * @author brendenpalmer
  * @license MIT
  */
 
-describe('Namespace: weakmap', function() {
-  describe('Class: WeakMap', function() {
+describe('Namespace: es6map', function() {
+  describe('Class: Map', function() {
     var _iterableTest1 = {};
     var _iterableTest2 = {};
     var _iterable = [
       [_iterableTest1, '1'],
       [_iterableTest2, '2']
     ];
-    var _WeakMap = weakmap.WeakMap;
-    var _constants = weakmap.WeakMapConstants;
-    var _instance = new _WeakMap(_iterable);
+    var _Map = es6map.Map;
+    var _constants = es6map.MapConstants;
+    var _instance = new _Map(_iterable);
 
     it('should be defined', function() {
-      expect(_WeakMap).toBeDefined();
+      expect(_Map).toBeDefined();
     });
 
     it('should have defined the instance', function() {
@@ -31,9 +31,9 @@ describe('Namespace: weakmap', function() {
     });
 
     it('should not call .set if no iterable parameter is passed to the constructor', function () {
-      spyOn(_WeakMap.prototype, 'set').and.callThrough();
-      var _instance2 = new _WeakMap();
-      expect(_WeakMap.prototype.set).not.toHaveBeenCalled();
+      spyOn(_Map.prototype, 'set').and.callThrough();
+      var _instance2 = new _Map();
+      expect(_Map.prototype.set).not.toHaveBeenCalled();
     });
 
     describe('When setting a value', function() {

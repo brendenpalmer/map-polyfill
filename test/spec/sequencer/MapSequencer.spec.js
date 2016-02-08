@@ -1,17 +1,17 @@
 /**
- * Tests for WeakMapSequencer.ts
+ * Tests for MapSequencer.ts
  *
  * @author brendenpalmer
  * @license MIT
  */
 
-describe('Namespace: weakmap', function() {
-  describe('Class: WeakMapSequencer', function() {
-    var _WeakMapSequencer = weakmap.WeakMapSequencer;
-    var _instance = _WeakMapSequencer.getInstance();
+describe('Namespace: es6map', function() {
+  describe('Class: MapSequencer', function() {
+    var _MapSequencer = es6map.MapSequencer;
+    var _instance = _MapSequencer.getInstance();
 
     it('should be defined', function() {
-      expect(_WeakMapSequencer).toBeDefined();
+      expect(_MapSequencer).toBeDefined();
     });
 
     it('should have defined the instance', function() {
@@ -20,8 +20,8 @@ describe('Namespace: weakmap', function() {
 
     it('should throw an error', function() {
       expect(function() {
-        new _WeakMapSequencer();
-      }).toThrow('Get the instance of the WeakMapSequencer using the getInstance method.');
+        new _MapSequencer();
+      }).toThrow('Get the instance of the MapSequencer using the getInstance method.');
     });
 
     describe('When getting the next value in the sequencer', function() {
