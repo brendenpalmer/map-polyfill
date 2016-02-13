@@ -43,9 +43,9 @@ gulp.task('scripts:concat', () => {
     ''
   ].join('\n');
 
-  return gulp.src(config.tmp + '/weakmap.min.js')
+  return gulp.src(config.tmp + '/map.min.js')
     .pipe(iife())
-    .pipe(uglify())
+  //  .pipe(uglify())
     .pipe(header(_header, {
       pkg: packageJson
     }))

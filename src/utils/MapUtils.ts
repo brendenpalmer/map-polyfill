@@ -26,10 +26,10 @@ namespace es6map {
      *
      * @name defineProperty
      * @param {*} object The object
-     * @returns {number} The value set
+     * @returns {string} The value set
      */
-    public static defineProperty(object: any): number {
-      let _value: number;
+    public static defineProperty(object: any): string {
+      let _value: string;
 
       // throw a type error if the object is not valid
       if (MapUtils.isValidObject(object) === false) {
@@ -63,10 +63,10 @@ namespace es6map {
      *
      * @name getProperty
      * @param {*} object The object
-     * @returns {number} The unique identifier tied to
+     * @returns {string} The unique identifier tied to
      * an object
      */
-    public static getProperty(object: any): number {
+    public static getProperty(object: any): string {
       if (MapUtils.isValidObject(object) === true) {
         return object[MapConstants.MAP_KEY_IDENTIFIER];
       } else {

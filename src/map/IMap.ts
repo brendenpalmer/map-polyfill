@@ -1,3 +1,5 @@
+/// <reference path="../iterator/MapIterator.ts"/>
+
 /**
  * Contains the es6map namespace
  *
@@ -19,5 +21,10 @@ namespace es6map {
     has(key: Object): boolean;
     delete(key: Object): boolean;
     set(key: Object, value: any): void;
+    clear(): void;
+    entries(): MapIterator;
+    keys(): MapIterator;
+    values(): MapIterator;
+    forEach(callback: Function, thisArg?: any): void;
   }
 }

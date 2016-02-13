@@ -28,7 +28,7 @@ describe('Namespace: es6map', function() {
       it('should return the correct value', function() {
         _instance.identifier = 0;
         for (var i = 0; i < 99; i++) {
-          expect(_instance.next()).toEqual(i);
+          expect(_instance.next()).toEqual('Map_CJPOYUrpwK_aHBtMHXsTM' + String(i));
         }
       });
     });

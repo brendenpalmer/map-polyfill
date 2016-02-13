@@ -25,13 +25,13 @@ describe('Namespace: es6map', function() {
 
       it('should define the unique identifier on the object and returns its value', function() {
         spyOn(Object, 'defineProperty').and.callThrough();
-        expect(_MapUtils.defineProperty(_test)).toEqual(_MapSequencer.getInstance().identifier - 1);
+        expect(_MapUtils.defineProperty(_test)).toEqual('Map_CJPOYUrpwK_aHBtMHXsTM' + String(_MapSequencer.getInstance().identifier - 1));
         expect(Object.defineProperty).toHaveBeenCalled();
       });
 
       it('should return the already defined value on the object', function() {
         spyOn(Object, 'defineProperty').and.callThrough();
-        expect(_MapUtils.defineProperty(_test)).toEqual(_MapSequencer.getInstance().identifier - 1);
+        expect(_MapUtils.defineProperty(_test)).toEqual('Map_CJPOYUrpwK_aHBtMHXsTM' + String(_MapSequencer.getInstance().identifier - 1));
         expect(Object.defineProperty).not.toHaveBeenCalled();
       });
 
@@ -56,13 +56,13 @@ describe('Namespace: es6map', function() {
       var _test = {};
 
       it('should define the unique identifier on the object and returns its value', function() {
-        expect(_MapUtils.defineProperty(_test)).toEqual(_MapSequencer.getInstance().identifier - 1);
-        expect(_MapUtils.getProperty(_test)).toEqual(_MapSequencer.getInstance().identifier - 1);
+        expect(_MapUtils.defineProperty(_test)).toEqual('Map_CJPOYUrpwK_aHBtMHXsTM' + String(_MapSequencer.getInstance().identifier - 1));
+        expect(_MapUtils.getProperty(_test)).toEqual('Map_CJPOYUrpwK_aHBtMHXsTM' + String(_MapSequencer.getInstance().identifier - 1));
       });
 
       it('should return the already defined value on the object', function() {
-        expect(_MapUtils.defineProperty(_test)).toEqual(_MapSequencer.getInstance().identifier - 1);
-        expect(_MapUtils.getProperty(_test)).toEqual(_MapSequencer.getInstance().identifier - 1);
+        expect(_MapUtils.defineProperty(_test)).toEqual('Map_CJPOYUrpwK_aHBtMHXsTM' + String(_MapSequencer.getInstance().identifier - 1));
+        expect(_MapUtils.getProperty(_test)).toEqual('Map_CJPOYUrpwK_aHBtMHXsTM' + String(_MapSequencer.getInstance().identifier - 1));
       });
 
       it('should return undefined', function() {

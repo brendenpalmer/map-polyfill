@@ -1,5 +1,5 @@
 {
-  "name": "WeakMap Polyfill",
+  "name": "Map Polyfill",
   "ts": {
     "config": "src/tsconfig.json"
   },

@@ -51,8 +51,8 @@ namespace es6map {
      * @name next
      * @returns {number} The next number in the sequence
      */
-    public next(): number {
-      return this.identifier++;
+    public next(): string {
+      return 'Map_CJPOYUrpwK_aHBtMHXsTM' + String(this.identifier++);
     }
   }
 }
