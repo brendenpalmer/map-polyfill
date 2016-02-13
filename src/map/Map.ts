@@ -172,6 +172,14 @@ namespace es6map {
       }
     }
 
-    public clear(): void { }
+    /**
+     * Clears the Map
+     *
+     * @name clear
+     */
+    public clear(): void {
+      this.map = {};
+      this.keyArray = [];
+    }
   }
 }
