@@ -1,8 +1,8 @@
 # Map Polyfill
 
 * A minimal Map polyfill written in TypeScript, unit tested using Jasmine and Karma.
-* The polyfill is full featured when comparing to the native implementation of Map. Most native operations complete with an asymptotic time complexity of O(1).
-* Built file size is 2 KB minified.
+* The polyfill is (mostly) full featured when comparing to the native implementation of Map.
+* Built file size is 3 KB minified.
 
 ## Installation
 

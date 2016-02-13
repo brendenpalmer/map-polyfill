@@ -45,7 +45,7 @@ gulp.task('scripts:concat', () => {
 
   return gulp.src(config.tmp + '/map.min.js')
     .pipe(iife())
-  //  .pipe(uglify())
+    .pipe(uglify())
     .pipe(header(_header, {
       pkg: packageJson
     }))
